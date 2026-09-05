@@ -1,0 +1,86 @@
+lab: 6
+title: 'Apply the Style Guide: Callouts, Links, Backlinks, Equations and a Navigation Hub'
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 4
+day: 1
+level: Intermediate
+alignment:
+  knowledge: K4
+  ability: A2
+tools: Notion styling, links and backlinks, math equations, link-to-page blocks
+objective: Curate content to the organisation's guidelines with consistent styling, linked navigation and technical
+  notation
+goal: You apply the supplied Brightwave style guide across the Content Hub — colours, fonts, callout conventions,
+  icons and covers — build a navigation hub with link-to-page blocks and backlinks so every article is reachable
+  in two clicks, and document the pricing formula with KaTeX equations.
+build: A styled Content Hub with a navigation hub page, backlinks on every article, a style-compliant callout system
+  and an equations page
+workflow:
+- Apply the style guide
+- Build the navigation hub
+- Link and check backlinks
+- Add math equations
+files:
+- path: style-guide.md
+  description: Brightwave content style guide
+- path: navigation-map.csv
+  description: Which pages the hub must link to, in order
+- path: equations.md
+  description: The retainer and ROI formulas in KaTeX
+steps:
+- n: 1
+  title: Read the style guide
+  detail: 'Open style-guide.md. Note the rules: blue callouts for tips, yellow for warnings, red for policy; serif
+    font is not allowed; page icons must be emoji; covers only on section pages; small text off.'
+  done: false
+- n: 2
+  title: Fix page-level styling
+  detail: Open Five Content Trends for 2027 → ⋯ menu. Set Font to Default, turn Small text off and Full width on.
+    Check the icon is an emoji and remove the cover (the article is not a section page).
+  done: false
+- n: 3
+  title: Apply text and background colours
+  detail: Select the key statistic in the introduction and use the toolbar A menu to set a blue text colour. Select
+    the warning sentence and set a yellow background. Use Cmd/Ctrl+Shift+H to repeat the last colour.
+  done: false
+- n: 4
+  title: Standardise callouts
+  detail: Convert the tip paragraph into a callout with a 💡 icon and blue background, the caution paragraph into
+    a callout with ⚠️ and yellow background, and add a red policy callout that @-mentions the Content Management
+    Policy.
+  done: false
+- n: 5
+  title: Build the navigation hub
+  detail: Open Content Hub. Type /link to page for each article and for Blog Articles, Newsletters and Social Posts
+    (create empty pages where needed). Add a heading 'Start here', a table of contents block and a divider between
+    groups.
+  done: false
+- n: 6
+  title: Create inline links two ways
+  detail: In the article introduction type @ and choose the Content Hub page to create an inline mention; then type
+    [[ and choose Company Home. Highlight the word 'policy', press Cmd/Ctrl+K and paste the policy page URL to link
+    plain text.
+  done: false
+- n: 7
+  title: Check backlinks
+  detail: Open Company Home. Under the title, click the Backlinks indicator to see every page that links here, including
+    the article. In ⋯ → Customize page set Backlinks to Show in popover and Comments to Expanded.
+  done: false
+- n: 8
+  title: Add math equations
+  detail: Create a page Pricing Formulas under Company Wiki → Policies. Type /math equation and enter the block
+    equation from equations.md (the retainer formula). In a sentence type $$ROI = \frac{Gain - Cost}{Cost}$$ to
+    render it inline, then click it to edit.
+  done: false
+- n: 9
+  title: Add icons and covers to section pages
+  detail: Give the four section pages a distinct emoji icon and a cover each (Unsplash search in the cover picker).
+    Confirm no article page has a cover, per the style guide.
+  done: false
+acceptance_check: Every article follows the style guide (default font, emoji icon, no cover, colour-coded callouts),
+  Content Hub is a navigation hub with link-to-page blocks and a table of contents, Company Home's backlinks list
+  the article, and Pricing Formulas renders a block and an inline KaTeX equation.
+evidence: Screenshot of the navigation hub, of the backlinks popover and of the equations page.

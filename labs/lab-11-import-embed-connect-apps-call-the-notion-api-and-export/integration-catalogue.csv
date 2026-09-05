@@ -1,0 +1,13 @@
+Integration,Category,What it does for Brightwave,Pricing,Access model,Likely owner,Score: job to be done (1-5),Score: permissions (1-5),Score: cost (1-5),Score: maintenance (1-5),Recommend? (Y/N)
+Zapier,Automation platform,"Connect Notion to 7,000+ apps with triggers and actions",Free tier; from USD 20/mo,Read/write via Notion API,Content Manager,,,,,
+Make,Automation platform,Visual multi-step scenarios with Notion modules,Free tier; from USD 9/mo,Read/write via Notion API,Content Manager,,,,,
+Slack,Communication,"Notifications, link previews, database alerts, Notion AI connector",Included with Slack,OAuth connection,All staff,,,,,
+Google Drive,Storage,"Embed files, link previews, Notion AI connector",Included with Google Workspace,OAuth connection,All staff,,,,,
+Figma,Design,Live embeds of frames and prototypes,Free tier,Embed / link preview,Designers,,,,,
+Typeform,Forms,Embed forms; send responses to a database via Zapier,Free tier; from USD 25/mo,Embed + Zapier,Marketing,,,,,
+Loom,Video,Embed walkthrough recordings,Free tier,Embed,All staff,,,,,
+GitHub,Development,Synced databases of issues and PRs; link previews,Free,OAuth connection,Web team,,,,,
+Notion Web Clipper,Browser extension,Save web pages into a database,Free,Built-in,Content team,,,,,
+Super.so,Website builder,"Custom domain, themes and SEO for published Notion pages",From USD 16/mo,Public page,Marketing,,,,,
+Notion Calendar,Calendar,Two-way calendar of database dates with Google Calendar,Free,Built-in,All staff,,,,,
+Whimsical,Diagrams,Embed flowcharts and wireframes,Free tier,Embed,Designers,,,,,

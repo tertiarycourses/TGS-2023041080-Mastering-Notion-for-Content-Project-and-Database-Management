@@ -1,0 +1,23 @@
+# Confidential — assessment papers and answer keys are trainer-only and never published.
+assessment/
+# Source material the courseware was derived from — not ours to republish.
+reference/
+**/reference/
+# Toolchain (installed per machine by /wsq-setup)
+.claude/
+# Environment / secrets
+.env
+courseware/.env
+*.key
+*_api_key
+notion-api/.env
+# Archives and superseded versions
+*.zip
+courseware/archive/
+# OS / Office noise
+.DS_Store
+~$*
+*.tmp
+# Python bytecode
+__pycache__/
+*.pyc

@@ -1,0 +1,7 @@
+Role,Company Wiki,Content Hub,Client Projects,Help Centre,Content Calendar,Tasks
+Content Manager (owner),Full access,Full access,Full access,Full access,Full access,Full access
+Editors (group),Can edit,Can edit,Can edit,Can edit,Can edit content,Can edit content
+Designers (group),Can comment,Can edit,Can edit,Can comment,Can edit content,Can edit content
+Account Managers (group),Can comment,Can comment,Full access,Can comment,Can view,Can edit content
+Client guest,No access,No access,Can comment (own project only),Public,No access,Can edit content (own project view)
+Public visitor,No access,No access,No access,View (published),No access,No access

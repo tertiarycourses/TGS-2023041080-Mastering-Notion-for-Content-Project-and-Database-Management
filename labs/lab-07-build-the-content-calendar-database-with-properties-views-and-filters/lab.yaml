@@ -1,0 +1,86 @@
+lab: 7
+title: Build the Content Calendar Database with Properties, Views and Filters
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 5
+day: 2
+level: Foundation
+alignment:
+  knowledge: K3
+  ability: A3
+tools: Notion databases (table, board, calendar, gallery views)
+objective: Maintain the organisation's web content assets in a database with typed properties, multiple views, filters,
+  sorts and groups
+goal: You import the supplied content calendar CSV into a full-page database in the Content Hub, correct the property
+  types, open rows as pages, add board, calendar and gallery views, and build filtered views for each editor so
+  the team maintains every web asset from one source.
+build: A Content Calendar database with typed properties, five views (table, board by status, calendar by publish
+  date, gallery, 'My items'), filters, sorts and grouping
+workflow:
+- Import the CSV as a database
+- Fix property types
+- Add board, calendar and gallery views
+- Filter, sort and group
+files:
+- path: content-calendar.csv
+  description: Thirty-six content items with status, channel, tags, dates and owners
+steps:
+- n: 1
+  title: Import the CSV
+  detail: Open Content Hub. In the sidebar click Import → CSV and choose content-calendar.csv. Notion creates a
+    full-page database named after the file with one row per line. Rename it Content Calendar and move it under
+    Content Hub.
+  done: false
+- n: 2
+  title: Inspect the imported properties
+  detail: 'Every column arrived as a property, but several as Text. Click a column header → Edit property → Type
+    and set: Status → Status, Channel → Select, Tags → Multi-select, Publish Date → Date, Owner → Person (assign
+    yourself), Word Count → Number, URL → URL, Approved → Checkbox.'
+  done: false
+- n: 3
+  title: Open a row as a page
+  detail: Hover the first row's Name and click Open. The properties appear at the top and the page body below. Add
+    a short brief in the body. Click ⋯ → Customize page to hide empty properties, then close the peek.
+  done: false
+- n: 4
+  title: Add and reorder properties
+  detail: Add a Created time property and an ID property (prefix BW). Drag the columns so Name, Status, Channel,
+    Owner and Publish Date come first; hide Word Count in this view with the eye icon in the property list.
+  done: false
+- n: 5
+  title: Add a board view by status
+  detail: Click + next to the view tabs → Board. Group by Status; drag a card from Draft to In Review and see its
+    Status update. Turn on Sub-group by Channel.
+  done: false
+- n: 6
+  title: Add a calendar view
+  detail: Add a Calendar view, choose Show calendar by Publish Date, and drag an item to a new date. Switch to Week
+    view and back to Month.
+  done: false
+- n: 7
+  title: Add a gallery view
+  detail: Add a Gallery view, set Card preview to Page cover and Card size to Medium, and show the Channel and Status
+    properties on the cards.
+  done: false
+- n: 8
+  title: Filter, sort and group the table
+  detail: 'In the Table view add a filter Status is not Published, a sort by Publish Date ascending, and Group by
+    Channel. Then add an advanced filter: Channel is Blog OR (Tags contains Campaign AND Approved is unchecked).
+    Click Save for everyone.'
+  done: false
+- n: 9
+  title: Create a personal 'My items' view
+  detail: Duplicate the Table view, rename it My items and filter Owner contains Me. Add a new row inside this view
+    and notice the Owner is pre-filled — a filtered view is a forcing function.
+  done: false
+- n: 10
+  title: Lock the database views
+  detail: Click ⋯ at the top right → Lock database so teammates can edit content but not the properties or views.
+    Note the lock icon.
+  done: false
+acceptance_check: Content Calendar contains every row from content-calendar.csv with the corrected property types,
+  has table, board (grouped by Status, sub-grouped by Channel), calendar, gallery and My items views, the advanced
+  filter returns only the matching rows, and the database is locked.
+evidence: Screenshots of the table view with filters and of the board view.

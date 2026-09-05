@@ -1,0 +1,86 @@
+lab: 8
+title: Manage Client Projects with Sub-tasks, Dependencies, Timeline and Linked Views
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 5
+day: 2
+level: Intermediate
+alignment:
+  knowledge: K3
+  ability: A3
+tools: Notion databases (timeline, sub-items, dependencies, linked views)
+objective: Maintain project and task assets with sub-items, dependencies, a timeline and linked database views embedded
+  in other pages
+goal: You create the Projects and Tasks databases in Client Projects from the supplied CSVs, turn on sub-items and
+  dependencies so date changes shift dependent tasks, plan the Nova Retail launch on a timeline, and embed linked
+  views of the tasks inside each project page and on the Company Home dashboard.
+build: Projects and Tasks databases with sub-tasks, dependencies and a timeline, plus linked task views inside project
+  pages and on Company Home
+workflow:
+- Create Projects and Tasks
+- Enable sub-items and dependencies
+- Plan on the timeline
+- Embed linked views
+files:
+- path: projects.csv
+  description: Six client projects with client, dates, stage and budget
+- path: tasks.csv
+  description: Twenty-four tasks with parents, dependencies, assignees and estimates
+steps:
+- n: 1
+  title: Create the Tasks database
+  detail: Open Client Projects. Import tasks.csv as a database named Tasks. Set Status → Status, Due → Date (with
+    end date), Assignee → Person, Estimate (h) → Number, Priority → Select.
+  done: false
+- n: 2
+  title: Create the Projects database
+  detail: Import projects.csv as Projects. Set Client → Select, Dates → Date range, Stage → Status, Budget (SGD)
+    → Number with SGD format.
+  done: false
+- n: 3
+  title: Turn on sub-items
+  detail: In Tasks click ⋯ → Sub-items → Turn on. Notion adds Parent item and Sub-items properties. Using tasks.csv's
+    Parent column, open each parent task and add its sub-tasks; the table shows a toggle arrow on parents.
+  done: false
+- n: 4
+  title: Turn on dependencies
+  detail: Click ⋯ → Dependencies → Turn on, choose Shift only when dates overlap, and set the Blocked by / Blocking
+    properties. Using the Depends on column in the CSV, add each dependency.
+  done: false
+- n: 5
+  title: Add a timeline view
+  detail: Add a Timeline view of Tasks, choose Timeline by Due, Month zoom, and Show table with Name, Assignee and
+    Status. Dependency arrows appear between bars.
+  done: false
+- n: 6
+  title: Shift a date and watch dependencies move
+  detail: Drag the 'Approve creative concept' bar two days later. The dependent 'Produce launch assets' task shifts
+    too. Undo with Cmd/Ctrl+Z and note the behaviour in your README checklist.
+  done: false
+- n: 7
+  title: Group and filter the timeline
+  detail: Group the timeline by Assignee, then filter Status is not Done. Add a table view named Overdue with filter
+    Due is before Today AND Status is not Done.
+  done: false
+- n: 8
+  title: Embed a linked view inside a project page
+  detail: Open the Nova Retail Launch project page. Type /linked view of database, choose Tasks, and Create new
+    empty view. Filter it to Project contains Nova Retail Launch (create a Project relation property in Tasks first
+    if it does not exist — Lab 9 completes this). Hide the database title.
+  done: false
+- n: 9
+  title: Add a dashboard linked view to Company Home
+  detail: On Company Home add /linked view of database → Tasks → copy the Overdue view. Now the home page shows
+    overdue work across all clients. Add a linked calendar of Content Calendar beside it in a second column.
+  done: false
+- n: 10
+  title: Lock views on the linked database
+  detail: On the Company Home linked views use ⋯ → Lock views so the dashboard layout stays fixed while data still
+    changes.
+  done: false
+acceptance_check: Tasks has parent tasks with sub-items and dependency arrows on the timeline, moving a blocking
+  task shifts its dependents, the Overdue view lists only late open tasks, the Nova Retail Launch page shows only
+  its own tasks in a linked view, and Company Home shows locked linked views of Tasks and Content Calendar.
+evidence: Screenshot of the timeline with dependencies and of the Company Home dashboard.

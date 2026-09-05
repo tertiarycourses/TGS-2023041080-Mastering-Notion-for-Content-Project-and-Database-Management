@@ -1,0 +1,37 @@
+ID,Name,Status,Channel,Tags,Publish Date,Owner,Word Count,URL,Approved
+BW-001,Five Content Trends for 2027,Idea,Blog,Client,2026-10-18,Sofia Chen,0,,No
+BW-002,How to Brief a Designer,Draft,Newsletter,SEO,2026-09-16,Daniel Ong,0,,No
+BW-003,Nova Retail Launch Announcement,Draft,Social,Campaign,2026-11-10,Content Manager,250,,No
+BW-004,Open Banking Explained,In Review,Video,Evergreen,2026-10-30,Content Manager,250,,No
+BW-005,Festive Recipe Round-up,Scheduled,Help Centre,Evergreen,2026-09-14,Sofia Chen,1500,,Yes
+BW-006,Patient Guide: Managing Blood Pressure,Published,Blog,Campaign;Evergreen,2026-09-14,Content Manager,1500,https://brightwave.notion.site/patient-guide-managing-blood-pressure,Yes
+BW-007,Skyline Q4 Market Snapshot,Published,Newsletter,Client;Evergreen,2026-09-24,Daniel Ong,0,https://brightwave.notion.site/skyline-q4-market-snapshot,Yes
+BW-008,Behind the Scenes at Brightwave,Published,Social,Evergreen;Internal,2026-11-19,Content Manager,120,https://brightwave.notion.site/behind-the-scenes-at-brightwave,Yes
+BW-009,Newsletter #41 — September,Idea,Video,Internal,2026-10-24,Sofia Chen,0,,No
+BW-010,Newsletter #42 — October,Draft,Help Centre,Internal,2026-11-18,Aisha Rahman,1200,,No
+BW-011,Reel: Studio Tour,Draft,Blog,Client;SEO,2026-11-14,Daniel Ong,1200,,No
+BW-012,Reel: Product Unboxing,In Review,Newsletter,Evergreen;Product,2026-10-23,Sofia Chen,120,,No
+BW-013,Help Centre: Getting Started,Scheduled,Social,Client;Internal,2026-09-17,Marcus Lim,250,,Yes
+BW-014,Help Centre: Requesting Changes,Published,Video,Campaign,2026-10-13,Daniel Ong,250,https://brightwave.notion.site/help-centre-requesting-changes,Yes
+BW-015,Case Study: GreenLeaf Spring,Published,Help Centre,Client;Evergreen,2026-09-28,Priya Nair,0,https://brightwave.notion.site/case-study-greenleaf-spring,Yes
+BW-016,Case Study: Meridian Hub,Published,Blog,Product;SEO,2026-09-16,Daniel Ong,1200,https://brightwave.notion.site/case-study-meridian-hub,Yes
+BW-017,Payments Security Basics,Idea,Newsletter,Campaign;Product,2026-11-20,Marcus Lim,250,,No
+BW-018,Content Calendar Template Walkthrough,Draft,Social,Product,2026-09-15,Sofia Chen,180,,No
+BW-019,Interview: Harbour Fintech CTO,Draft,Video,Client;SEO,2026-11-28,Sofia Chen,180,,No
+BW-020,Top 10 Notion Tips for Teams,In Review,Help Centre,Evergreen;SEO,2026-09-09,Daniel Ong,0,,No
+BW-021,LinkedIn: Hiring a Content Lead,Scheduled,Blog,Evergreen,2026-11-09,Marcus Lim,600,,Yes
+BW-022,LinkedIn: Our Values,Published,Newsletter,Client;Product,2026-10-08,Content Manager,120,https://brightwave.notion.site/linkedin-our-values,Yes
+BW-023,Webinar Recap: Content Ops,Published,Social,Internal;SEO,2026-11-03,Aisha Rahman,250,https://brightwave.notion.site/webinar-recap-content-ops,Yes
+BW-024,Year in Review 2026,Published,Video,Client;Product,2026-11-16,Marcus Lim,250,https://brightwave.notion.site/year-in-review-2026,Yes
+BW-025,Client Onboarding Checklist,Idea,Help Centre,Campaign,2026-10-06,Aisha Rahman,600,,No
+BW-026,Video Script: Skyline Listing,Draft,Blog,Campaign,2026-10-06,Priya Nair,1500,,No
+BW-027,FAQ: Turnaround Times,Draft,Newsletter,Campaign;SEO,2026-09-30,Aisha Rahman,250,,No
+BW-028,FAQ: Pricing and Retainers,In Review,Social,Internal;Product,2026-11-14,Marcus Lim,120,,No
+BW-029,Style Guide Update Notice,Scheduled,Video,Client,2026-11-11,Sofia Chen,250,,Yes
+BW-030,Holiday Posting Schedule,Published,Help Centre,Campaign;Client,2026-10-27,Priya Nair,1200,https://brightwave.notion.site/holiday-posting-schedule,Yes
+BW-031,Blog: Measuring Content ROI,Published,Blog,Campaign,2026-09-14,Aisha Rahman,1200,https://brightwave.notion.site/blog-measuring-content-roi,Yes
+BW-032,Blog: Repurposing Long-form,Published,Newsletter,SEO,2026-09-27,Daniel Ong,0,https://brightwave.notion.site/blog-repurposing-long-form,Yes
+BW-033,Social: Team Spotlight — Aisha,Draft,Social,Internal,2026-09-20,Aisha Rahman,0,,No
+BW-034,Social: Team Spotlight — Daniel,Draft,Video,Campaign,2026-10-23,Aisha Rahman,250,,No
+BW-035,Newsletter #43 — November,Draft,Help Centre,Internal;SEO,2026-09-26,Marcus Lim,1200,,No
+BW-036,Help Centre: Analytics Explained,Draft,Blog,Client,2026-09-22,Priya Nair,1200,,No

@@ -1,0 +1,109 @@
+lab: 11
+title: Import, Embed, Connect Apps, Call the Notion API and Export
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 8
+day: 2
+level: Advanced
+alignment:
+  knowledge: K9
+  ability: A6
+tools: Notion Import, embeds, Connections, Notion API (integration token), Export
+objective: Recommend and apply plug-ins and integrations that manage the organisation's web properties, and protect
+  data integrity with exports
+goal: You import a Trello-style board export, embed Google Drive, Figma and Loom links, connect Slack and GitHub,
+  create an internal integration and use its token to query the Content Calendar and create a page through the Notion
+  API, evaluate the supplied integration catalogue to recommend plug-ins for Brightwave, and export the workspace
+  as Markdown + CSV.
+build: An imported board, embedded assets, connected apps, a working API integration that reads and writes a database,
+  a plug-in recommendation table and a workspace export
+workflow:
+- Import and embed
+- Connect apps
+- Create and call an API integration
+- Recommend plug-ins and export
+files:
+- path: trello-board-export.csv
+  description: A Trello-style board export to import
+- path: embed-links.md
+  description: Drive, Figma, Loom and Maps links to embed
+- path: notion-api/notion_api.py
+  description: Python client for query and create calls
+- path: notion-api/query-database.sh
+  description: curl version of the data source query
+- path: notion-api/query-database.json
+  description: Filter body for the query
+- path: notion-api/create-page.json
+  description: Properties body for the create-page call
+- path: notion-api/.env.example
+  description: Where the integration secret and database ID go
+- path: api-data-model.md
+  description: The database and data source objects explained
+- path: integration-catalogue.csv
+  description: Twelve integrations to evaluate
+- path: export-checklist.md
+  description: Export and backup checklist
+steps:
+- n: 1
+  title: Import the Trello-style board
+  detail: In the sidebar click Import → CSV and choose trello-board-export.csv (List, Card, Labels, Due, Members).
+    Notion builds a database; add a Board view grouped by List to recreate the kanban.
+  done: false
+- n: 2
+  title: Embed external assets
+  detail: On Nova Retail Launch type /embed and paste the Google Drive, Figma and Loom links from embed-links.md;
+    resize each embed. Paste a Google Maps URL as a link and choose Create embed.
+  done: false
+- n: 3
+  title: Connect Slack and GitHub
+  detail: Open Settings → My connections (or Connections) and connect Slack; then in Deliverables automation add
+    an action Send Slack notification to a channel. Connect GitHub and paste a pull-request URL into a page to see
+    it unfurl as a link preview.
+  done: false
+- n: 4
+  title: Create an internal integration
+  detail: Go to https://www.notion.so/profile/integrations → New integration. Name it Brightwave Bot, choose the
+    Brightwave workspace, type Internal, capabilities Read, Update, Insert content. Copy the Internal Integration
+    Secret into notion-api/.env (never into a page).
+  done: false
+- n: 5
+  title: Share a database with the integration
+  detail: Open Content Calendar → ⋯ → Connections → Connect to → Brightwave Bot. Copy the database ID from the page
+    URL (the 32-character string before ?v=) into notion-api/.env as DATABASE_ID.
+  done: false
+- n: 6
+  title: Query the data source with the API
+  detail: In a terminal run bash notion-api/query-database.sh (or python3 notion-api/notion_api.py query). The script
+    sends POST https://api.notion.com/v1/data_sources/{id}/query with the Notion-Version header and prints each
+    row's Name and Status. Read query-database.json to see the filter body.
+  done: false
+- n: 7
+  title: Create a page through the API
+  detail: Run python3 notion-api/notion_api.py create. It posts create-page.json to /v1/pages with the parent data
+    source and properties Name, Status = Draft and Channel = Blog. Refresh Content Calendar — the new row appears.
+  done: false
+- n: 8
+  title: Review the API data model
+  detail: 'Open api-data-model.md: a database object contains one or more data sources; each data source has a properties
+    schema and pages as rows (API version 2025-09-03). Note the object, id, data_sources, title, is_inline and public_url
+    fields.'
+  done: false
+- n: 9
+  title: Recommend plug-ins
+  detail: Open integration-catalogue.csv (Zapier, Make, Slack, Google Drive, Figma, Typeform, Whimsical, Loom, GitHub,
+    Notion Web Clipper, Super.so, Notion Calendar). Score each for Brightwave on the criteria given and write your
+    top-three recommendation with one sentence of justification each in a page Recommended Integrations.
+  done: false
+- n: 10
+  title: Export for data integrity
+  detail: Export Five Content Trends for 2027 as PDF (⋯ → Export). Then Settings → Settings → Export all workspace
+    content as Markdown & CSV, include subpages, and check the ZIP contains the CSVs of every database. Record the
+    export date in export-checklist.md.
+  done: false
+acceptance_check: The Trello import shows as a board, the project page embeds three external assets, Slack and GitHub
+  are connected, the API query prints the calendar rows and the API create call adds a Draft row, Recommended Integrations
+  names three tools with justification, and a Markdown & CSV workspace export has been downloaded.
+evidence: Terminal output of the query and create scripts (token redacted), screenshot of the Connections list and
+  of the export dialog.

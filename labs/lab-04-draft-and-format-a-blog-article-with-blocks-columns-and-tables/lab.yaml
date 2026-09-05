@@ -1,0 +1,80 @@
+lab: 4
+title: Draft and Format a Blog Article with Blocks, Columns and Tables
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 3
+day: 1
+level: Foundation
+alignment:
+  knowledge: K2
+  ability: A2
+tools: Notion editor, Markdown shortcuts
+objective: Post and format web content in Notion using blocks, keyboard shortcuts, columns, tables, headings and
+  dividers
+goal: You post the supplied blog article draft into the Content Hub, structure it with headings, lists, toggles,
+  quotes and dividers using slash commands and Markdown shortcuts, lay out a two-column comparison, and add a simple
+  table from the facts sheet so the article is ready for deployment.
+build: A fully structured blog article page in the Content Hub with headings, a table of contents, two columns and
+  a facts table
+workflow:
+- Post the draft
+- Structure with headings and lists
+- Lay out columns and a table
+- Polish with shortcuts
+files:
+- path: blog-article-draft.md
+  description: The article text to post, in Markdown
+- path: article-facts-table.csv
+  description: The figures for the 'By the numbers' table
+steps:
+- n: 1
+  title: Create the article page
+  detail: Open Content Hub → Blog Articles (create the sub-page if it is missing) and add a new page titled Five
+    Content Trends for 2027. Add an icon and cover so it is recognisable in the sidebar.
+  done: false
+- n: 2
+  title: Paste the draft as blocks
+  detail: Open blog-article-draft.md, copy everything and paste into the page. Notion converts each Markdown heading,
+    bullet and paragraph into its own block. Check the headings arrived as Heading 1/2 blocks (hover shows the type).
+  done: false
+- n: 3
+  title: Add a table of contents
+  detail: Directly under the title type /table of contents. The block lists every heading and updates as you edit.
+    Click an entry to jump.
+  done: false
+- n: 4
+  title: Apply Markdown and keyboard shortcuts
+  detail: 'In the introduction: type ** around a phrase for bold, use Cmd/Ctrl+E for inline code on the tool names,
+    Cmd/Ctrl+Shift+H to highlight, and Cmd/Ctrl+Shift+7 to turn the trend list into a numbered list. Undo with Cmd/Ctrl+Z.'
+  done: false
+- n: 5
+  title: Use toggles and quotes
+  detail: Turn the 'Methodology' paragraph into a toggle (type > at the start of the line) so it is collapsed by
+    default. Turn the expert quotation into a quote block with the ⋮⋮ → Turn into menu.
+  done: false
+- n: 6
+  title: Create a two-column layout
+  detail: Drag the 'Short-form video' paragraph to the right edge of the 'Long-form articles' paragraph until a
+    blue vertical guide appears and drop it. Drag the column divider to make the columns equal. Use the ⋮⋮ → Turn
+    into → Text of the column to remove it if needed.
+  done: false
+- n: 7
+  title: Insert a simple table
+  detail: Under 'By the numbers' type /table and choose Table (the simple table, not a database). Give it 3 columns
+    and 6 rows, tick Header row, and type the values from article-facts-table.csv. Use the ⋮⋮ on a row to reorder.
+  done: false
+- n: 8
+  title: Add dividers and headings
+  detail: 'Insert /divider between major sections and check the heading hierarchy: one Heading 1, Heading 2 per
+    trend, Heading 3 for sub-points. Fix any level that breaks the hierarchy.'
+  done: false
+- n: 9
+  title: Duplicate, delete and restore
+  detail: Duplicate the table with ⋮⋮ → Duplicate, delete the copy with Delete, then open Trash in the sidebar to
+    see deleted pages, and ⋯ → Page history to confirm a snapshot exists.
+  done: false
+acceptance_check: The article page has a working table of contents, one Heading 1 and a Heading 2 per trend, a collapsed
+  toggle, a quote block, an equal two-column section and a six-row simple table with a header row matching article-facts-table.csv.
+evidence: Screenshot of the article showing the table of contents, columns and table.

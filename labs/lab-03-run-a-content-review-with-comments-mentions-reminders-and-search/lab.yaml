@@ -1,0 +1,81 @@
+lab: 3
+title: Run a Content Review with Comments, Mentions, Reminders and Search
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 2
+day: 1
+level: Intermediate
+alignment:
+  knowledge: K5
+  ability: A1
+tools: Notion comments, mentions, reminders, Inbox, Search
+objective: Use Notion's collaboration tools to review content, assign follow-ups and find information across the
+  workspace
+goal: Acting as the reviewer of the About Brightwave page, you raise the feedback items from the supplied review
+  sheet as comments, mention the owners, set dated reminders, resolve threads, watch the Inbox, and use Search filters
+  to find every page that mentions a client.
+build: A reviewed page with a comment thread per feedback item, mentions and reminders assigned, resolved threads,
+  and a saved search routine
+workflow:
+- Raise inline comments
+- Mention owners and dates
+- Set and act on reminders
+- Search and filter the workspace
+files:
+- path: review-feedback.csv
+  description: Six review comments to raise, with target text, action and owner
+- path: reminders.csv
+  description: The two follow-up dates and their owners
+steps:
+- n: 1
+  title: Open the page to review
+  detail: 'Open Company Wiki → About Brightwave. Open review-feedback.csv: each row is a feedback item with the
+    text to comment on, the action needed and the owner.'
+  done: false
+- n: 2
+  title: Add a top-level page discussion
+  detail: Click Add comment under the page title (the page discussion area). Write 'Review round 1 — see inline
+    comments' and post it with Cmd/Ctrl+Enter.
+  done: false
+- n: 3
+  title: Raise inline comments
+  detail: For each CSV row, highlight the sentence named in the Target text column, click Comment in the floating
+    toolbar and paste the Action text. Six inline comments should appear in the right-hand comments sidebar.
+  done: false
+- n: 4
+  title: Mention the owner in each comment
+  detail: Edit each comment and type @ followed by the owner's name (use your own name for items owned by the Content
+    Manager). The mentioned person receives a notification in Inbox and by email.
+  done: false
+- n: 5
+  title: Add dated reminders
+  detail: In the two comments marked Follow-up in the CSV, type @ then a date such as @tomorrow, click the date
+    and set Remind → On the day at 9:00 AM. The date chip now shows a bell icon.
+  done: false
+- n: 6
+  title: Resolve and reopen a thread
+  detail: Fix the typo named in row 1 directly in the page text, then click ✓ Resolve on that comment. Open the
+    comments sidebar → Resolved to see it, and click Reopen to see it return.
+  done: false
+- n: 7
+  title: Read the Inbox
+  detail: Click Inbox in the sidebar. Check that your mentions appear under the Inbox tab and that the page change
+    appears under All. Archive one notification.
+  done: false
+- n: 8
+  title: Use Search with filters
+  detail: 'Press Cmd/Ctrl+K or click Search. Type Nova Retail (a client named in the profile). Use the filters to
+    limit to Only match titles off, Created by you, and In: Company Wiki; sort by Last edited. Note how many pages
+    match.'
+  done: false
+- n: 9
+  title: Search inside a page and check page history
+  detail: Open About Brightwave, press Cmd/Ctrl+F to find 'founded', then open ⋯ → Page history to see the snapshot
+    from before your edits.
+  done: false
+acceptance_check: About Brightwave shows one resolved and five open inline comments, each with an @-mentioned owner,
+  two comments carry reminder bells, the Inbox lists the mentions, and the Nova Retail search returns the pages
+  that name that client.
+evidence: Screenshot of the comments sidebar with mentions and reminder chips, and of the filtered search results.

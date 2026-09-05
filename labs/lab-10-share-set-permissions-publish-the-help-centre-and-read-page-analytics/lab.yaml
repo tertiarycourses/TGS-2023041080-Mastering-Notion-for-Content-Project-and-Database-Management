@@ -1,0 +1,93 @@
+lab: 10
+title: Share, Set Permissions, Publish the Help Centre and Read Page Analytics
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 7
+day: 2
+level: Intermediate
+alignment:
+  knowledge: K6
+  ability: A5
+tools: Notion sharing, teamspaces, Publish to web, page analytics, chart view
+objective: Report on content performance metrics after governing access with permissions, teamspaces and web publishing
+goal: You apply the supplied access matrix with members, guests, groups and teamspaces, lock the policy pages, publish
+  the Help Centre to the web with search indexing and a public home page, then read page analytics and build a metrics
+  dashboard from the supplied analytics sample so you can report on views, visitors and engagement.
+build: A permission model matching the access matrix, a published Help Centre site, a page-analytics reading and
+  a content metrics dashboard with a chart
+workflow:
+- Apply the access matrix
+- Create teamspaces and lock pages
+- Publish the Help Centre
+- Read and chart analytics
+files:
+- path: access-matrix.csv
+  description: Roles versus sections with the required permission level
+- path: page-analytics-sample.csv
+  description: Twelve weeks of views, visitors and time-on-page by page
+- path: publish-checklist.md
+  description: Pre-publication checklist for public pages
+steps:
+- n: 1
+  title: Read the access matrix
+  detail: Open access-matrix.csv. It lists each role (Editor, Designer, Account Manager, Client guest) against each
+    section and the permission level required (Full access, Can edit, Can edit content, Can comment, Can view).
+  done: false
+- n: 2
+  title: Invite a member and a guest
+  detail: Open Settings → People. Add a member with a second email you control (or a classmate). Then open Client
+    Projects → Nova Retail Launch, click Share, enter a client email and set Can comment — the person appears as
+    a Guest in Settings → People → Guests.
+  done: false
+- n: 3
+  title: Create a group
+  detail: In Settings → People → Groups create Editors and add the member. Share Content Hub with the Editors group
+    at Can edit. Groups keep permissions repeatable as people join or leave.
+  done: false
+- n: 4
+  title: Create a closed teamspace for clients
+  detail: In the sidebar click + next to Teamspaces, name it Client Work, set it to Closed, and move Client Projects
+    into it. Set the default access to Can edit content on the databases so guests can add rows but not change structure.
+  done: false
+- n: 5
+  title: Apply 'can edit content' and page lock
+  detail: Open Content Calendar → Share and set the Editors group to Can edit content. Open Content Management Policy,
+    click ⋯ → Lock page; try to type and observe the lock. Open Tasks → ⋯ → Lock database.
+  done: false
+- n: 6
+  title: Review security settings
+  detail: In Settings → Security review Disable guests, Disable public page sharing, Disable export and Allowed
+    email domains. Leave public sharing on (needed next) and note which settings Brightwave's policy would turn
+    on.
+  done: false
+- n: 7
+  title: Publish the Help Centre
+  detail: Open Help Centre → Share → Publish → Publish to web. Turn on Search engine indexing, turn off Allow duplicate
+    as template, keep Allow comments off, and copy the notion.site link. Open it in a private window.
+  done: false
+- n: 8
+  title: Set a public home page and check the visitor view
+  detail: In Settings → Sites (or Public pages) set Help Centre as the home page for the site. In the private window
+    check navigation, breadcrumbs and that private pages are not reachable.
+  done: false
+- n: 9
+  title: Read page analytics
+  detail: Open Help Centre → ⋯ → Analytics (or the clock icon). Note Views, Unique visitors and the viewer list
+    for the last 7 and 30 days. Open Settings → Analytics for workspace-level content, member and search analytics
+    on paid plans.
+  done: false
+- n: 10
+  title: Build the metrics dashboard
+  detail: 'Import page-analytics-sample.csv as a database Content Metrics under Company Wiki. Add a Chart view:
+    vertical bar, X axis = Week, Y axis = Sum of Views, grouped by Section. Add a second chart view: donut of Sum
+    of Unique Visitors by Channel. Add a formula Engagement = round(prop("Avg Time (s)") / 60) and a callout that
+    states the top three pages this month.'
+  done: false
+acceptance_check: Sharing matches access-matrix.csv (member, guest, Editors group, closed Client Work teamspace),
+  the policy page is locked, the Help Centre opens at a public notion.site URL with indexing on and duplication
+  off, page analytics show views and unique visitors, and Content Metrics has two chart views and an Engagement
+  formula.
+evidence: Screenshots of the Share dialog, the public site in a private window, the page analytics panel and the
+  metrics chart.

@@ -1,0 +1,83 @@
+lab: 2
+title: Build the Company Wiki with Verified Pages and a Content Policy
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 1
+day: 1
+level: Foundation
+alignment:
+  knowledge: K1
+  ability: A1
+tools: Notion, Markdown import
+objective: Implement content management policies, page ownership and verification in a Notion wiki
+goal: You turn the Company Wiki into a Notion wiki, import the supplied policy documents, assign page owners, verify
+  the authoritative pages with an expiry date, and publish the content management policy that governs the rest of
+  the workspace.
+build: A Notion wiki with imported policy pages, named owners, verified status and a visible content management
+  policy
+workflow:
+- Turn the page into a wiki
+- Import the policy documents
+- Assign owners and verify
+- Publish the policy notice
+files:
+- path: policies/content-management-policy.md
+  description: The organisation's content management policy to import
+- path: policies/naming-conventions.md
+  description: Page naming and structure conventions to import
+- path: page-owner-register.csv
+  description: Which person owns which wiki page
+steps:
+- n: 1
+  title: Move Company Home into a teamspace
+  detail: Wikis live in teamspaces. In the sidebar click the ⋯ next to Company Home → Move to → your workspace's
+    default teamspace (created with the workspace). The whole hierarchy moves with it.
+  done: false
+- n: 2
+  title: Turn Company Wiki into a wiki
+  detail: Open Company Wiki, click the ⋯ at the top right and choose Turn into wiki. Notion adds a wiki header with
+    Owner, Verification and Last edited columns and a home view of all pages.
+  done: false
+- n: 3
+  title: Import the policy documents
+  detail: Open the Policies sub-page. Click Import in the sidebar (or the ⋯ → Import), choose Text & Markdown and
+    upload content-management-policy.md and naming-conventions.md from the policies folder. Move the imported pages
+    under Policies if they land elsewhere.
+  done: false
+- n: 4
+  title: Read the content management policy
+  detail: 'Open the imported Content Management Policy page. Note the five rules: one owner per page, verified pages
+    expire after 90 days, naming convention for titles, approved templates only, and permissions by teamspace. Every
+    later lab applies these rules.'
+  done: false
+- n: 5
+  title: Assign page owners
+  detail: Open page-owner-register.csv. In the wiki's All pages view set the Owner property for each page to the
+    named person (assign yourself where the register says 'Content Manager'). The Owner column shows a person avatar.
+  done: false
+- n: 6
+  title: Verify the authoritative pages
+  detail: Open Content Management Policy, click Verify at the top → Verify this page, and set expiry to 90 days.
+    Repeat for Naming Conventions and About Brightwave. A green verified badge appears; unverified pages show none.
+  done: false
+- n: 7
+  title: Add the verification view
+  detail: In the wiki home click + Add a view → Table, name it Verification, group by Verification status and add
+    a filter Verification is not Verified so the owner sees what still needs review.
+  done: false
+- n: 8
+  title: Add the policy notice to Company Home
+  detail: On Company Home add a callout that reads 'All pages follow the Content Management Policy' and use @ to
+    mention the policy page inside the callout so it links directly.
+  done: false
+- n: 9
+  title: Check compliance against the naming convention
+  detail: Rename any page that breaks the naming convention (Title Case, no abbreviations, no dates in titles).
+    Confirm every page in the wiki has an owner.
+  done: false
+acceptance_check: Company Wiki shows the wiki header, three pages carry the green Verified badge with a 90-day expiry,
+  every page has an owner matching page-owner-register.csv, the Verification view lists only unverified pages, and
+  Company Home links to the policy.
+evidence: Screenshot of the wiki home with the Owner and Verification columns, and of a verified page header.

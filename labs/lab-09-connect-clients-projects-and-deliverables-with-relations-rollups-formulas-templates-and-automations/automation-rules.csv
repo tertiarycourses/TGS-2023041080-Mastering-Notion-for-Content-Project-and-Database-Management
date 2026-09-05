@@ -1,0 +1,4 @@
+Type,Database,Trigger,Action 1,Action 2
+Automation,Deliverables,Status is set to Approved,Edit property Approved On = now,Send notification to Owner: 'Deliverable approved — schedule publishing'
+Button,Projects (page body),Button clicked: Log weekly review,"Add page to Tasks: Name = Weekly review, Project = this project, Due = today + 7 days",
+Automation (optional),Tasks,Status is set to Done on a Blocking task,Send Slack notification to #content-ops,

@@ -1,0 +1,25 @@
+Task ID,Name,Project,Parent,Depends on,Assignee,Status,Due,Estimate (h),Priority
+T-01,Plan Nova Retail launch content,Nova Retail Launch,,,Content Manager,Done,2026-09-16,4,High
+T-02,Draft launch messaging,Nova Retail Launch,T-01,,Aisha Rahman,Done,2026-09-19,6,High
+T-03,Approve creative concept,Nova Retail Launch,T-01,T-02,Marcus Lim,In Progress,2026-09-24,2,High
+T-04,Produce launch assets,Nova Retail Launch,,T-03,Sofia Chen,Not Started,2026-10-03,16,High
+T-05,Write launch blog article,Nova Retail Launch,T-04,T-03,Aisha Rahman,Not Started,2026-10-07,5,Medium
+T-06,Design social carousel,Nova Retail Launch,T-04,T-03,Sofia Chen,Not Started,2026-10-08,8,Medium
+T-07,Schedule newsletter,Nova Retail Launch,,T-05,Content Manager,Not Started,2026-10-14,2,Medium
+T-08,Publish and monitor launch,Nova Retail Launch,,"T-06,T-07",Content Manager,Not Started,2026-10-21,3,High
+T-09,Post-launch report,Nova Retail Launch,,T-08,Marcus Lim,Not Started,2026-10-30,4,Low
+T-10,Interview Harbour Fintech CTO,Harbour Fintech Thought Leadership Q4,,,Priya Nair,Not Started,2026-10-06,3,High
+T-11,Draft article 1: Open banking,Harbour Fintech Thought Leadership Q4,,T-10,Priya Nair,Not Started,2026-10-15,6,High
+T-12,Draft article 2: Payments security,Harbour Fintech Thought Leadership Q4,,T-10,Daniel Ong,Not Started,2026-10-29,6,Medium
+T-13,Client review round,Harbour Fintech Thought Leadership Q4,,"T-11,T-12",Priya Nair,Not Started,2026-11-05,2,Medium
+T-14,Festive recipe shoot,GreenLeaf Festive Campaign,,,Sofia Chen,Not Started,2026-11-10,10,High
+T-15,Write 6 festive social posts,GreenLeaf Festive Campaign,,T-14,Aisha Rahman,Not Started,2026-11-17,6,Medium
+T-16,Festive newsletter,GreenLeaf Festive Campaign,,T-15,Aisha Rahman,Not Started,2026-11-24,3,Medium
+T-17,Audit existing patient articles,Meridian Patient Education Hub,,,Daniel Ong,Done,2026-08-28,8,High
+T-18,Rewrite top 10 articles,Meridian Patient Education Hub,,T-17,Daniel Ong,In Progress,2026-09-30,20,High
+T-19,Clinical review of rewrites,Meridian Patient Education Hub,,T-18,Priya Nair,Not Started,2026-10-14,4,High
+T-20,Publish hub v1,Meridian Patient Education Hub,,T-19,Content Manager,Not Started,2026-10-28,3,High
+T-21,Collect 2026 market data,Skyline Market Report 2027,,,Sofia Chen,Not Started,2026-12-12,6,Medium
+T-22,Map Help Centre pages,Brightwave Help Centre Refresh,,,Content Manager,Done,2026-09-09,2,Medium
+T-23,Rewrite FAQ section,Brightwave Help Centre Refresh,,T-22,Aisha Rahman,In Progress,2026-09-25,5,Medium
+T-24,Publish Help Centre and review analytics,Brightwave Help Centre Refresh,,T-23,Content Manager,Not Started,2026-10-16,3,High

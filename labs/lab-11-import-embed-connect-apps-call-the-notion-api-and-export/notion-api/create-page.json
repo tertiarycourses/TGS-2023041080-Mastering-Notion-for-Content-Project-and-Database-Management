@@ -1,0 +1,31 @@
+{
+  "parent": {
+    "data_source_id": "<DATA_SOURCE_ID>"
+  },
+  "properties": {
+    "Name": {
+      "title": [
+        {
+          "text": {
+            "content": "Created via the Notion API \u2014 Brightwave Bot"
+          }
+        }
+      ]
+    },
+    "Status": {
+      "status": {
+        "name": "Draft"
+      }
+    },
+    "Channel": {
+      "select": {
+        "name": "Blog"
+      }
+    },
+    "Publish Date": {
+      "date": {
+        "start": "2026-10-30"
+      }
+    }
+  }
+}

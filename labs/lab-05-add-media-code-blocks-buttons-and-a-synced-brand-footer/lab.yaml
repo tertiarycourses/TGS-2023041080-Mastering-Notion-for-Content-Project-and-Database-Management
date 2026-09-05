@@ -1,0 +1,90 @@
+lab: 5
+title: Add Media, Code Blocks, Buttons and a Synced Brand Footer
+course:
+  title: Mastering Notion for Content, Project, and Database Management
+  code: TGS-2023041080
+  version: v6
+topic: 3
+day: 1
+level: Intermediate
+alignment:
+  knowledge: K2
+  ability: A2
+tools: Notion media blocks, code blocks, buttons, synced blocks
+objective: Use images, files, embeds, code blocks, buttons and synced blocks to maintain consistent, media-rich
+  content
+goal: You enrich the article and the Content Hub with the supplied hero image and chart, an embedded PDF and video
+  bookmark, a syntax-highlighted code sample, a button that inserts a standard 'article checklist', and a synced
+  brand footer that appears on every article and updates from one place.
+build: A media-rich article with captioned images, embeds, a code block, an insert-checklist button and a synced
+  footer used on two pages
+workflow:
+- Add and caption media
+- Embed files and links
+- Insert code and a button
+- Sync the brand footer
+files:
+- path: media/brightwave-hero.png
+  description: Hero image for the article
+- path: media/brightwave-chart.png
+  description: Chart image for the 'By the numbers' section
+- path: media/brightwave-media-kit.pdf
+  description: PDF to embed as a file block
+- path: embed-links.md
+  description: Video, bookmark and map links to embed
+- path: code-sample.py
+  description: UTM tagging helper for the code block
+- path: brand-footer.md
+  description: Brand footer text and the article checklist
+steps:
+- n: 1
+  title: Upload the hero image
+  detail: Open Five Content Trends for 2027. Under the title type /image → Upload and choose media/brightwave-hero.png.
+    Drag its side handles to full width, then hover and click Caption to add 'Brightwave content trends 2027'.
+  done: false
+- n: 2
+  title: Add the chart image with alignment
+  detail: Under 'By the numbers' add /image with media/brightwave-chart.png. Use the alignment icons on hover to
+    centre it and resize it to about two-thirds width. Click Replace to see how an image is swapped without losing
+    the caption.
+  done: false
+- n: 3
+  title: Embed a file and a web bookmark
+  detail: Type /file and upload media/brightwave-media-kit.pdf; then type /web bookmark and paste https://www.notion.com/help/intro-to-databases.
+    Notice the bookmark unfurls with a title and preview. Try /video with a YouTube URL from embed-links.md.
+  done: false
+- n: 4
+  title: Add a code block with syntax highlighting
+  detail: Under the 'Tracking script' heading type /code, paste the contents of code-sample.py, set the language
+    to Python, toggle Wrap code on, and click the copy icon to confirm it copies. Add a caption 'UTM tagging helper'.
+  done: false
+- n: 5
+  title: Create a button that inserts the article checklist
+  detail: At the top of Blog Articles type /button, name it Insert article checklist, add the action Insert blocks,
+    and build a to-do list from brand-footer.md's checklist section (SEO title, meta description, hero image, footer).
+    Click Done, then click the button to test it.
+  done: false
+- n: 6
+  title: Write the brand footer as a synced block
+  detail: At the bottom of the article type /synced block. Inside it add a divider, a callout with the Brightwave
+    contact line from brand-footer.md and a link to the Help Centre page. The red outline marks a synced block.
+  done: false
+- n: 7
+  title: Reuse the synced block on a second page
+  detail: Click Copy and sync at the top right of the synced block, open another article page (create Content Trends
+    Webinar Recap) and paste. Edit the contact line in one copy and watch the other update.
+  done: false
+- n: 8
+  title: Unsync a copy and observe
+  detail: On the second page choose the synced block ⋯ → Unsync. Edit it and confirm the original no longer changes.
+    Then delete the unsynced copy and paste the synced version again.
+  done: false
+- n: 9
+  title: Check media on mobile width
+  detail: Drag the browser narrow (or open Notion on your phone) to confirm the images scale, the columns stack
+    and the code block wraps.
+  done: false
+acceptance_check: The article shows a captioned full-width hero image, a centred chart, an embedded PDF, a web bookmark,
+  a Python code block with wrap on, the Insert article checklist button inserts four to-dos, and the same synced
+  footer appears on two pages and updates in both when edited.
+evidence: Screenshot of the article with media and code block, and of the synced block on the second page.
